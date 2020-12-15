@@ -18,4 +18,18 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-tomcat:2.4.0'
     implementation 'org.springframework:spring-web:5.3.1'
     implementation 'org.springframework:spring-webmvc:5.3.1'
+    //test framework
+    testImplementation'org.springframework.boot:spring-boot-starter-test'
 }
+
+test {
+    useJUnitPlatform()
+}
+
+bootRun.environment([
+        "WELCOME_MESSAGE": "howdy",
+])
+
+test.environment([
+        "WELCOME_MESSAGE": "Hello from test",
+])
