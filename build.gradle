@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    //below implementation contains all 5 dependencies 
+    //below implementation contains all 5 dependencies
     //depending on if you need them all or specify which ones
     //implementation 'org.springframework.boot:spring-boot-starter-web'
 
